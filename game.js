@@ -47,6 +47,14 @@ for (var i = 0;i < document.querySelectorAll(".btn").length;i++) {
   });
 }
 
+document.querySelector("h1").addEventListener("click", function(){
+  if(!started) {
+    document.querySelector("h1").textContent = "Level 1";
+    nextSequence();
+    started = true;
+  }
+});
+
 document.querySelector("body").addEventListener("keypress", function(){
   if(!started) {
     document.querySelector("h1").textContent = "Level 1";
